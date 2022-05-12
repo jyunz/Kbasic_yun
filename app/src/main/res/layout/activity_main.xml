@@ -8,16 +8,30 @@
     android:padding="20dp"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="보여줄 문구" />
+
+    <EditText
+        android:id="@+id/enterEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="아무문장이나 입력" />
+
+
     <Button
         android:id="@+id/clickBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="클릭용 버튼" />
+        android:text="문장반영" />
 
-    <Button
-        android:id="@+id/smallBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="버튼" />
+    <TextView
+        android:id="@+id/resultTxt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="입력한 내용이 나올자리" />
+
 
 </LinearLayout>
