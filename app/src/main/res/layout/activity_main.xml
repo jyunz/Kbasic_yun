@@ -8,30 +8,60 @@
     android:padding="20dp"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/ic_launcher"/>
+
+    </LinearLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="보여줄 문구" />
+        android:text="아이디"
+        android:layout_marginTop="30dp"/>
 
     <EditText
-        android:id="@+id/enterEdt"
+        android:id="@+id/idEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="아무문장이나 입력" />
-
-
-    <Button
-        android:id="@+id/clickBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="문장반영" />
+        android:padding="10dp"
+        android:hint="이메일양식으로 입력"
+        android:inputType="textEmailAddress"/>
 
     <TextView
-        android:id="@+id/resultTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/pwEdt"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="입력한 내용이 나올자리" />
+        android:layout_height="wrap_content"
+        android:hint="비밀번호 입력"
+        android:inputType="textPassword"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그인" />
+
+
+
+
 
 
 </LinearLayout>
